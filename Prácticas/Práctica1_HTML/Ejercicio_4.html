@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 4</title>
+    </head>
+    <body>
+        <a href="https://www.frro.utn.edu.ar/"><img src="https://www.editores-srl.com.ar/sites/default/files/logos/utn_regional_rosario_200x200px.jpg" alt="Logo de la UTN FRRo" width="100" height="100"></a>
+        <hr size="4" color="#000000">
+        <h1>AÑO 2008</h1>
+        <table border="1" cellspacing="0" width="300">
+            <tr>
+                <th colspan="2">Exámenes</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Fecha: <span id='date-time'></span> </td>
+                <td align="center">Aprobados</td>
+            </tr>
+            <tr>
+                <td align="center">24/30</td>
+            </tr>
+        </table>
+
+        <ol>
+            <li><a href=#enun1>Enunciado del examen</a></li>
+            <li><a href="https://frro.cvg.utn.edu.ar/" target="_blank">Resolución</a></li>
+        </ol>
+        <br>
+        <form action="mailto:x@x.com">
+            <legend>Puede realizar consultas completando el siguiente formulario:</legend>
+            <table>
+                <tr>
+                    <th align="right">e-mail:</th>
+                    <td><input type="text" id="inpMail"/></td>
+                </tr>
+                <tr>
+                    <th align="right" valign="top">Consulta:</th>
+                    <td><textarea rows="5" cols="20" id="inpConsulta"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <th><button type="submit">Enviar</button><button type="reset">Borrar</button></th>
+                </tr>
+            </table>
+        </form>
+
+        <br>
+        <h3 id="enun1">Enunciado del examen</h3>
+        <div>
+            <p>Ejercicio 1: ..............................<br>..................................................</p>
+            <p>Ejercicio 2: ..............................<br>..................................................</p>
+        </div>
+        <p>Para más información dirigirse a <a href="mailto:contacto@xx.com">contacto@xx.com</a></p>
+    </body>
+</html>
+
+<script>
+    date = new Date();
+    anio = date.getFullYear();
+    mes = date.getMonth() + 1;
+    dia = date.getDate();
+    document.getElementById('date-time').innerHTML = dia + "/" + mes + "/" + anio;
+</script>

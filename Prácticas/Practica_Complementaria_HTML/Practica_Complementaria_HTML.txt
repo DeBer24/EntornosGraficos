@@ -1,0 +1,29 @@
+Ejercitación 1
+
+1 - ¿Ventajas de HTML5?
+Las principales ventajas de usar este lenguaje son:
+	Es gratuito: se puede programar desde incluso un bloc de notas y hay muchos editores gratuitos. Además es posible ejecutarlo en cualquiera navegador.
+	Código más ordenado: el código se puede separar fácilmente entre etiquetas que son claras y con nombres descriptivos.
+	Compatibilidad en navegadores: todos los navegadores actuales y más usados en el mundo, soportan el estándar.
+	Almacenamiento mejorado: es posible guardar información en la máquina del cliente, que sigue existiendo incluso si este borra las cookies; esta información nunca se transmite al servidor.
+	Posee diseño adaptativo: cada página desarrollada para un ordenador, puede ser adaptada para ser vista correctamente en un celular.
+
+
+2 - ¿Por qué utilizarlo?
+Es conveniente utilizar el lenguaje ya que es muy útil para definir las estructuras básicas de una página Web. Permite añadir audio y video sin necesidad de utilizar una herramienta externa, cuenta con un sistema para detectar la localización del usuario y entre otras muchas ventajas está la posbilidad de crear animaciones 2D.
+
+
+Ejercitación 2
+A - ¿Qué formatos de audio soporta HTML5?
+Los formatos admitidos para insertar audio son: WAV, MP3, AAC, Vorbis y Opus.
+
+B - Crear un elemento de audio
+Realizado en documento html
+
+
+Ejercitación 3
+A - ¿Qué formatos de video son soportados?
+Los formatos de video son MP4 FLAC, MP4 H.264, WebM y Ogg.
+
+B - Crear un elemento de video
+Realizado en documento html

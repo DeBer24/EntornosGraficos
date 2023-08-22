@@ -1,0 +1,130 @@
+Ejercitación 1
+
+1 - ¿Qué es HTML, cuándo fue creado, cuáles fueron las distintas versiones y cuál es la última?
+
+HTML es un lenguaje de marcado de hipertexto que utiliza etiquetas para comunicarle al navegador lo que debe mostrar. Es un estándar a nivel global. El primer documento formal sobre el lenguaje fue publicado en el año 1991 y rápidamente se comenzó a extender para presentar en el año '95 HTML 3.0 que de cierta manera fracasó.
+Actualmente, se reconocen las siguientes versiones estándares oficiales: HTML 2.0, HTML 3.2, HTML 4.0, HTML 4.01 y HTML 5. Esta última es la versión más actual y se encuentra en vigencia su versión definitiva, desde octubre de 2014.
+
+
+2 -  ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos con HTML?
+
+El World Wide Web Consortium es el organismo mundial encargado de desarrollar las tecnologías y protocolos que han hecho posible la Web que hoy conocemos, una Web única, universal y accesible por cualquier persona y desde cualquier dispositivo. Esta organización recomienda seguir una serie de principios al momento de desarrollar una página Web. Ellos están relacionados con:
+	Compatibilidad: Los sitios Web deben poder ser interpretados por navegadores que trabajen con versiones anteriores y más modernas del estándar.
+	Utilidad: Se exige un diseño que asegure que HTML se pueda usar de manera efectiva para los propósitos previstos.
+	Interoperabilidad: Estos principios existen para mejorar las posibilidades de que las implementaciones de HTML sean realmente interoperables.
+	Acceso universal: Las características deben diseñarse para que se pueda acceder desde cualquier dispositivo en cualquier lugar del mundo.
+
+
+3 - En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿Y obsoleto?
+
+Un elemento o atributo desaprobado es uno que ha quedado anticuado debido a la existencia de estructuras nuevas. Se sigue definiendo en los manuales de referencia, pero se hace una acalaración sobre su estado.
+Se considera obsoleto cuando no hay garantía de soporte para el mismo, por parte de un agente de usuario; dejan de estar definidos en la especificación.
+En versiones futuras de HTML, un elemento desaprobado puede declararse como obsoleto.
+
+
+4 - ¿Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+
+Se conoce como DTD a la declaración del tipo de docuemnto. Esta se encuentra en la primer línea del documento, antes de <html>. EN la versión 4.01 del estándar, existen 2 posibles declaraciones: transitoria (<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN") y estricta (<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN")
+Sin embargo, en HTML 5 sólo es necesario indicar: <!DOCTYPE HTML>
+
+
+5 - ¿Qué son los metadatos y cómo se especifican en HTML?
+
+En el ámbito de los sitios Web, el término "metadatos" hace referencia a los elementos cuya función es describir a la página a la que pertenecen. Los motores de búsqueda los utilizan para analizar el sitio y poder redirigir a los usuarios adecuados.
+Las etiquetas de metadatos se deben añadir entre las etiquetas <head> y </head>. Algunas de ellas son para el título, descripción e idioma de la página.
+
+
+
+
+Ejercitación 2 - Analizar los segmentos de código
+
+
+a) Se trata de un comentario, este no es representado por los navegadores y por lo tanto no es visible para el usuario final. Se puede utilizar en cualquier sección del documento, su sintaxis es <!--comentario-->
+
+
+b) En este caso se está definiendo un bloque o división lógica en la página. La etiqueta <div> se utiliza comúnmente en el desarrollo de documentos con propósitos estilísticos. El contenido del elemento es "Contenido del bloque1" y posee un atributo de id que sirve para identificar el bloque, no es obligatorio. Se usa en el body.
+
+
+c) El elemento <img> representa a una imagen, lo cual es un recurso externo que puede ser incrustado en el cuerpo de un documento. El atributo src es el único obligatorio e indica la URL de la imagen.
+El atributo alt define el texto alternativo que se mostrará si no se puede acceder a la URL, id es para identificar el elemento, name es su nombre, width y height son el ancho y altura en píxeles y longdesc complementa al texto de alt, mostrando la URL como descripción de la imagen. Se usa en el body.
+
+
+d) El elemento <meta> se utiliza para proveer metadatos que no cuentan con una etiqueta propia para realizarlo.
+	el atributo name provee metadatos a nivel del documento que se organizan en pares de nombre-valor. El valor se determina con el atributo content. lang indica el lenguaje del nombre
+	el atributo http-equiv representa una directiva pragma. El atributo content indica como se debería usar la directiva.
+Se usa en el head.
+
+
+e) La etiqueta <a> es un vínculo si cuenta con el atributo href o un marcador de posición si no.
+El atributo href indica la URI del recurso enlazado (una página externa por ejemplo). type indica el tipo de contenido que se espera tenga el recurso. hreflang es el lenguaje se espera tenga el enlace. charset es para definir la codificación de caracteres del recurso. rel sirve para definir una lista no ordenada de tipos de vínculos únicos, separados por espacios, que indican el significado que el recurso enlazado tiene para el documento actual; en este caso "help" indica que es un vínculo a ayuda contextual.
+Lo que el usuario verá será "Resumen HTML" . Se puede utilizar en el body
+
+
+f) El elemento representado es una tabla. Permite representar información tabulada y consiste en un grupo de filas que contienen celdas. width indica el ancho de la tabla. summary es un resumen del propósito/estructura de la tabla
+La etiqueta <caption> tiene la función de representar el título de una tabla, en este caso es "Título". Su atributo align define donde ubicar el título con respecto a la tabla.
+El elemento <tr> representa una fila de la tabla. <th> es una celda de encabezado de la tabla. El atributo scope definde un grupo de celdas para las cuales la celda creada brinda información de encabezado. Sus valores posibles son: row, col, rowgroup, colgroup, auto.
+<td> es una celda común de datos en la tabla.
+Se utiliza en el body del documento
+
+
+
+
+Ejercitación 3 - En cada caso, explicar las diferencias entre los segmentos de código y sus visualizaciones
+
+
+a) Los dos primeros bloques de código muestran al usuario el texto "Click aquí para ir a Google" y redirigen al mismo a la página del buscador. El segundo vínculo, establece que la página se abrirá en una nueva ventana, gracias al atributo target. En el caso 1, se abrirá en la misma ventana que la página actual.
+En el tercer caso, se determinan el tipo del recurso enlazado, su lenguaje y tipo de codificación. Falta el contenido del elemento
+La cuarta etiqueta, dirige al usuario a la parte superior de la página. El texto mostrado no es el indicado.
+La quinta sentencia, dirige al elemento con id "arriba", podría ser un botón por ejemplo
+El último enlace no es visible al usuario, se indica su id y su nombre. Es a donde redirige el enlace del caso anterior
+
+
+b) Se trata de 4 párrafos. El número 1 muestra una imagen y al lado un link con el texto "Click aquí"
+El segundo se trata de un link con una imagen, al clickear la imagen redirige al enlace. Al lado hay un texto plano.
+En el tercero, el vínculo incluye tanto a la imagen como al texto. Al clickear cualquiera de los dos, se redirige a la página de Google.
+El último es un párrafo que contiene dos vínculos, el primero aparece como una imagen y el segundo como un texto.
+Todas las imágenes muestran el texto alternativo "imagen1" en caso de no poder acceder al recurso
+
+
+c) El primer segmento de código, crea una lista no ordenada y tiene 3 elementos. En el segundo, la lista se encuentra ordenada, es decir, con un número que indica la posición del elemento de la lista.
+El tercer caso, define 3 listas ordenadas, pero da la sensación de ser una sola ya que se le asigna manualmente el valor de cada item en las listas 2 y 3. Sin embargo, presenta una separación que no está presente en el caso anterior.
+El cuarto caso, define un bloque de citas y dentro de este un párrafo. Crea la lista ordenada manualmente (asigna número como texto) al utilzar quiebres de línea (<br>)
+
+
+d) Ambas son tablas con igual ancho y bordes. Las dos contienen la misma cantidad de celdas.
+La primera tabla hace uso de las celdas de encabezado mientras que en la segunda se usan celdas normales para los encabezados, a las cuales se les asigna atributos para centrar el texto y ponerlo en negrita.
+El resultado es el mismo, pero en el primer caso es mucho más sencillo de implementar.
+
+
+e) Las dos tablas tienen el mismo ancho. La primera utiliza la etiqueta <caption> para mostrar el título mientras que en la segunda se realiza insertando una fila con una única celda que abarca 3 y contiene un contenedor div centrado.
+El resto de la tabla es igual y las celdas tienen un color de fondo
+
+
+f) La primer celda de la primer tabla, ocupa además la que está por debajo de ella misma, gracias al atributo rowspan.
+En la segunda tabla, pasa lo mismo con la primer celda, pero ocupa la celda de al lado, se logra con el atributo colspan.
+
+
+g) La tabla 2 contiene dos atributos adicionales: cellpadding que indica el número de pixeles de separación entre el borde de una celda y su contenido; y cellspacing que define el espaciado entre las celdas. Por esto, la tabla es más compacta que la 1
+
+
+h) Se trata de 3 <form> que son contenedores de controles con los que el usuario puede interactuar para enviar datos. Cada uno tiene identificador y nombre. El atributo action contiene la URI del programa en backend que será responsable de manipular los datos que ingresó el usuario.
+El atributo method indica el método a utilizar para enviar la información. El primero y el tercero utilizan "POST" (los datos se adjuntan al cuerpo de la petición) y el segundo "GET" (los datos se adjuntan a la URL de la petición). Target define donde se deberian cargar los resultados del procesamiento, en los tres casos es en una nueva ventana. El tercer form tiene un valor de enctype, que define como se codificarán los datos, en este caso los espacios se reemplazan por signos "+".
+El primer y tercer form, contienen un <fieldset> que sirve para agrupar un conjunto de controles, por esto aparece un marco alrededor. El primer hijo del contenedor es <legend> que representa su título.
+Luego, los tres forms contienen dos inputs, uno para el usuario y el otro para la contraseña. Los del primer caso tienen valores iniciales, la clave del segundo no es de tipo password, por lo que será visible.
+Al final se encuentran los botones para enviar, que en los dos primeros son de tipo submit, pero en el último es de tipo reset, lo que provoca que al clickearlo se borren todos los datos ingresados en el formulario.
+
+
+i) Ambos segmentos de código tienen como contenedor principal un <label>, cuyo contenido de texto varía de "Botón 1" a "Botón 2".
+En el primer caso, se crea un botón cuyo atributo es "button", es decir la acción que realizará la determinará un código en JavaScript o PHP. Además cuenta con un nombre e identificador. Este elemento contiene una imagen con sus correspondientes atributos y por último su texto resaltado en negrita.
+En el segundo caso, el label tiene en su interior una etiqueta <input>, cuyo atributo type es "button" por lo que tiene la misma función que el del segmento de código anterior. Cabe destacar que hay otros 21 valores posibles para el atributo y la etiqueta se utiliza para ingresar campos de datos. El texto que aparece en el botón (que en este caso no está en negrita), es asignado al input, mediante el atributo value. El botón no cuenta con una imagen.
+
+
+j) En ambos bloques, la etiqueta principal es <p> (párrafo). Los dos cuentan con dos <label> que contienen cada uno un <input> de tipo "radio". Los valores a mostrar son "X" e "Y".
+Visualmente son iguales, pero difieren en que en el primer párrafo es posible seleccionar solamente uno de los radio buttons, mientras que en el segundo, es posible seleccionar ambos al mismo tiempo.
+Esta funcionalidad, probablemente no deseada, se debe a que los input del segundo párrafo tienen diferente valor en el atributo name, mientras que en el primero, ambos son iguales.
+
+
+k) La etiqueta usada en ambos segmentos es <select> que permite al usuario elegir de entre un grupo de opciones. Ambas tienen dos grupos de opciones con dos opciones cada una.
+La diferencia en su aspecto, se debe a que el segundo elemento de selección cuenta con el atributo multiple, lo que permite al usuario seleccionar varias opciones, con el uso de las teclas CTRL o SHIFT.
+Cuando este atributo está activado, el navegador automáticamente convierte el control a una caja con barras de desplazamiento, sin respetar el atributo size.
+

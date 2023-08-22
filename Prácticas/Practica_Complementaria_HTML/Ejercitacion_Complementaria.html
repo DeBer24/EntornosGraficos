@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercitación complementaria</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Elemento de audio:</p>
+        <audio src="https://html5tutorial.info/media/vincent.mp3" controls></audio>
+        <br>
+        <div style="height: 30vh;">
+            <p>Elemento de video:</p>
+            <video src="Gol_Pity_Martinez.mp4" controls height="100%"></video>
+        </div>
+
+        <br><br><br>
+        <form action="javascript:mostrarMensaje();" target="_self">
+            <fieldset>
+                <label>Campo obligatorio <input type="text" required><input type="submit"></label>
+            </fieldset>
+        </form>
+
+        <form action="mailto:" target="_self">
+            <fieldset>
+                <label>Campo de tipo email <input type="email" required><input type="submit"></label>
+            </fieldset>
+        </form>
+
+        <form action="javascript:mostrarMensaje();" target="_self">
+            <fieldset>
+                <label>Campo de tipo fecha <input type="date" required><input type="submit"></label>
+            </fieldset>
+        </form>
+
+        <form action="javascript:mostrarMensaje();" target="_self">
+            <fieldset>
+                <label>Campo de tipo color <input type="color"><input type="submit"></label>
+            </fieldset>
+        </form>
+
+        <form action="javascript:mostrarMensaje();" target="_self">
+            <fieldset>
+                <label>Campo de tipo número (mín 1 - máx 10) <input type="number" min="1" max="10" required><input type="submit"></label>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
+
+<script>
+    function mostrarMensaje() {
+      alert ("El valor ingresado es válido");
+    }
+</script>
