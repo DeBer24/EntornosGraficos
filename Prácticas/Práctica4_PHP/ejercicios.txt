@@ -1,0 +1,82 @@
+EJERCICIO 1 - Identificar partes del código
+
+Variables:
+	Boolenas: $a,
+	Enteras: $i, $d, $f, $g
+	Strings: $b, $c,
+
+Operadores: * binario, = binario, += binario, ? : ternario, ++ unario
+
+Funciones (parámetros): doble($i), gettype($var), is_string($var), is_int($var)
+
+Estructuras de control: hay dos cláusulas if
+
+Salida por pantalla: boolean, string, string, integer, 1, xyz, xyz, 18, 44, 44
+
+
+
+EJERCICIO 2 - Indicar si los códigos son equivalentes
+
+a) Los tres fragmentos de código producen la misma salida. El while puede escribirse de ambas maneras y para el caso del do while, se incrementa el valor de la variable antes de mostrarla.
+
+b) En este caso, los 4 bloques producen las mismas salidas a pesar de que en algunos no se aprovecha la simplicidad que ofrece la estructura for.
+
+c) Los códigos son equivalentes. Si se realizan varias comparaciones por igualdad, es más óptimo utilizar la estructura switch.
+
+
+EJERCICIO 3 - Explicar para qué se utiliza el código
+
+a) El código es utilizado para crear una tabla con un ancho del 90% y ancho de bordes igual a 1px. La tabla contendrá 5 filas con 2 columnas cada una.
+
+b) Al ejecutarse, se evalúa si hay algún valor de tipo POST con clave "submit". Si no está seteado, se crea un formulario con un input para ingresar la edad y otro para enviar el valor. AL clickear, se envían los datos al mismo script, pero esta vez hay un valor para la clave submit.
+En este caso, se muestran dos mensajes dependiendo de la edad ingresada
+
+
+EJERCICIO 4 - Indicar las salidas
+
+El primer echo produce un error ya que las variables $flor y $color no están definidadas y al tratarse de un string encerrado entre comillas dobles, el intérprete busca reemplazar los valores de las mismas. Si se hubiersen utilizado comillas simples, no habría ocurrido un error y la salida sería el string literal. Sólo se mostrará la palabra "El" y no se efectuará el salto de línea.
+
+Para el segundo echo, ya se incluyó el otro archivo de php donde las variables están definidas, por lo que esta vez la salida será: "El clavel blanco".
+
+
+EJERCICIO 5 - Analizar el ejemplo
+
+Cuando un visitante ingrese al sitio donde se encuentra el contador de visitas (visitas.php), se incluirá automáticamente otro archivo php (contador.php) que al ejecutarse inicializará una variable con la ruta de un archivo que contiene la cantidad de visitas a la página.
+Luego, se abrirá el archivo mencionado en modo lectura, para luego leer desde la posición del puntero (el inicio) hasta el final del mismo (que se obtiene mediante la función que devuelve el tamaño del archivo). El valor obtenido se guarda en una variable y se cierra el archivo.
+Después, se vuelve abrir pero con permisos de escritura, se incrementa en uno el valor de la variable asignada previamente y se escribe en el archivo en la posición actual del puntero (nuevamente el inicio). El arhivo se cierra.
+Finalmente se muestra el contador de visitas.
+
+
+
+
+ARRAYS Y FUNCIONES
+
+EJERCICIO 1 - ¿Códigos equivalentes?
+
+Sí, los códigos son equivalentes. En el primero se utiliza la función array para indicar las distinas claves y valores, mientras que en el segundo esto se hace manualmente.
+
+
+EJERCICIO 2 - Indicar las salidas
+
+a) bar 1
+b) 5, 9 y 42
+c) No hay ninguna sentencia echo, no hay salidas. Primeramente se borra el valor de la matriz con clave 5, y luego toda la matriz.
+
+
+EJERCICIO 3 - Indicar las salidas
+
+a) Suponiendo que son las 15:06:27 del 27/09/2023, la salida resultante es: "Has entrado en esta pagina a las 15 horas, con 6 minutos y 27 segundos, del 27/9/2023"
+
+b) La salida es: "5+6=11"
+
+
+EJERCICIO 4 - Analizar y probar funcionamiento
+
+Cuando se ejecuta la función (que requiere de un parámetro), se evalúa si la longitud del parámetro enviado es de entre 3 y 20 caracteres. Si no es así, se muestra un mensaje y se retorna el valor "false".
+Si la cadena pasa esta validación, se evalúa caracter a caracter si está presente en una cadena que contiene todos los caracteres válidos. Si no es así, se procede de la misma manera que en el caso anterior.
+En el caso de que pase también esta validación, se muestra un mensaje dando a conocer la situación y se retorna "true"
+
+
+
+
+
