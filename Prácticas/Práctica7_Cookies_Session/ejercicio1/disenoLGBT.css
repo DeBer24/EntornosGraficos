@@ -1,0 +1,16 @@
+#menuSuperior{
+    background-color: #E6ABFC;
+}
+
+#menuLateral{
+    background-color: #F88FF8;
+}
+
+#footer{
+    background-color: #E6ABFC;
+}
+
+#contenido{
+    background-image: url(bandera.png);
+    background-size: 100vh;
+}

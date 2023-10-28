@@ -1,0 +1,21 @@
+#menuSuperior{
+    height: 20vh;
+}
+
+#menuLateral{
+    height: 65vh;
+    width: 20%;
+}
+
+#contenido{
+    height: 65vh;
+    width: 80%;    
+}
+
+#footer{
+    height: 15vh;
+}
+
+#contenedor{
+    display: flex;
+}
